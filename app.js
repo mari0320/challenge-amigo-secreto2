@@ -36,7 +36,7 @@ function agregarAmigo() {
 
     function sortearAmigo() {
         if (listaAmigos.length > 1) {
-          const amigoSorteado =  [Math.floor(Math.random() * listaAmigos.length)];
+          const amigoSorteado =  listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
       
           // Muestra el GIF y el nombre del amigo
           document.getElementById("resultadoSorteo").style.display = "block";
